@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+	<head lang="<%= globals.lang %>">
+
+		<title><%= globals.site %> - <%= locals.title %></title>
+
+		<meta charset="utf-8">
+		<meta name="author" content="<%= globals.author %>">
+		<meta name="description" content="<%= locals.description || globals.description %>">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Open Graph protocol and Twitter Cards -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@<%= globals.twitter %>">
+		<meta name="twitter:url" property="og:url" content="<%= globals.url %><%= current.dir %><%= current.name %>.html">
+		<meta name="twitter:title" property="og:title" content="<%= globals.site %> - <%= locals.title %>">
+		<meta name="twitter:description" property="og:description" content="<%= locals.description || globals.description %>">
+		<meta name="twitter:image" property="og:image" content="<%= globals.url %><%= globals.opengraph %>">
+
+		<link rel="shortcut icon" href="<%= globals.favicon %>" type="image/x-icon">
+
+		<!-- CSS -->
+		<% for(var i=0; i<globals.styles.length; i++) {%>
+			<link rel="stylesheet" href="<%= globals.styles[i] %>">
+		<% } %>
+
+	</head>
+	<body>

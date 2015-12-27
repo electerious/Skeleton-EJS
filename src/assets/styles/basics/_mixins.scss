@@ -1,0 +1,61 @@
+@mixin breakpoint($from, $to: 'max') {
+
+	/*
+	 * All screens smaller than 1000px:
+	 * @include breakpoint(1000px) {  }
+
+	 * All screens bigger than 1000px:
+	 * @include breakpoint(1000px, 'min') {  }
+
+	 * All screens between 1000px and 500px, 500px and 0px:
+	 * @include breakpoint(1000px, 501px) {  }
+	 * @include breakpoint(500px, 0px) {  }
+	 */
+
+	@if $to == 'max' or $to == 'min' {
+
+		$hasDirection : true;
+		$direction    : $to;
+		$to           : null;
+
+	} @else {
+
+		$hasDirection : false;
+		$direction    : null;
+
+	}
+
+	@if unitless($from)               { @error '$from may not be unitless, was #{ $from }.'; }
+	@if $to != null and unitless($to) { @error '$to may not be unitless, was #{ $to }.'; }
+
+	@if $hasDirection == true {
+
+		// Set breakpoint
+		@media (#{ $direction }-width: $from) { @content; }
+
+	} @else {
+
+		// Set breakpoint
+		@media (max-width: $from) and (min-width: $to) { @content; }
+
+	}
+
+}
+
+@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+
+	/*
+	 * Including a font with different weights:
+	 * @include fontFace('FontName', '../fonts/regular', normal, normal);
+	 * @include fontFace('FontName', '../fonts/light', normal, 'light');
+	 * @include fontFace('FontName', '../fonts/bold', normal, 'bold');
+	 */
+
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.woff2') format('woff2'), url('#{$src}.woff') format('woff');
+		font-style: $style;
+		font-weight: $weight;
+	}
+
+}
