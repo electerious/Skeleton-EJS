@@ -17,7 +17,7 @@
     "compile": "node lib/compile.js"
   },
   "devDependencies": {
-    "rosid": "0.0.2",
+    "rosid": "1.0.0",
     "rosid-handler-ejs": "^1.0.0",
     "rosid-handler-js": "^1.0.0",
     "rosid-handler-scss": "^1.0.0"
