@@ -1,27 +1,27 @@
 <!doctype html>
 <html>
-	<head lang="<%= globals.lang %>">
+	<head lang="<%= lang %>">
 
-		<title><%= globals.site %> - <%= locals.title %></title>
+		<title><%= site %> - <%= title %></title>
 
 		<meta charset="utf-8">
-		<meta name="author" content="<%= globals.author %>">
-		<meta name="description" content="<%= locals.description || globals.description %>">
+		<meta name="author" content="<%= author %>">
+		<meta name="description" content="<%= description %>">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
 		<!-- Open Graph protocol and Twitter Cards -->
 		<meta name="twitter:card" content="summary_large_image">
-		<meta name="twitter:site" content="@<%= globals.twitter %>">
-		<meta name="twitter:url" property="og:url" content="<%= globals.url %><%= current.dir %><%= current.name %>.html">
-		<meta name="twitter:title" property="og:title" content="<%= globals.site %> - <%= locals.title %>">
-		<meta name="twitter:description" property="og:description" content="<%= locals.description || globals.description %>">
-		<meta name="twitter:image" property="og:image" content="<%= globals.url %><%= globals.opengraph %>">
+		<meta name="twitter:site" content="@<%= twitter %>">
+		<meta name="twitter:url" property="og:url" content="<%= url %><%= current.dir %><%= current.name %>.html">
+		<meta name="twitter:title" property="og:title" content="<%= site %> - <%= title %>">
+		<meta name="twitter:description" property="og:description" content="<%= description %>">
+		<meta name="twitter:image" property="og:image" content="<%= url %><%= opengraph %>">
 
-		<link rel="shortcut icon" href="<%= globals.favicon %>" type="image/x-icon">
+		<link rel="shortcut icon" href="<%= favicon %>" type="image/x-icon">
 
 		<!-- CSS -->
-		<% for(var i=0; i<globals.styles.length; i++) {%>
-			<link rel="stylesheet" href="<%= globals.styles[i] %>">
+		<% for(var i=0; i<styles.length; i++) {%>
+			<link rel="stylesheet" href="<%= styles[i] %>">
 		<% } %>
 
 	</head>
