@@ -1,0 +1,17 @@
+[
+  {
+    "name"    : "JS",
+    "path"    : "assets/scripts/**/[^_]*.js",
+    "handler" : "rosid-handler-js"
+  },
+  {
+    "name"    : "SCSS",
+    "path"    : "assets/styles/[^_]*.{css,scss}",
+    "handler" : "rosid-handler-scss"
+  },
+  {
+    "name"    : "EJS",
+    "path"    : "[^_]*.{html,ejs}",
+    "handler" : "rosid-handler-ejs"
+  }
+]
