@@ -2,26 +2,26 @@
 
 	// Top --------------------------------------------------------------- //
 	&-top,
-	&-top-l { margin-top: $spacing; }
-	&-top-m { margin-top: $spacing/2; }
-	&-top-s { margin-top: $spacing/4; }
+	&-top-l { margin-top: 1em; }
+	&-top-m { margin-top: .5em }
+	&-top-s { margin-top: .25em; }
 
 	// Right -------------------------------------------------------------- //
 	&-right,
-	&-right-l { margin-right: $spacing; }
-	&-right-m { margin-right: $spacing/2; }
-	&-right-s { margin-right: $spacing/4; }
+	&-right-l { margin-right: 1em; }
+	&-right-m { margin-right: .5em }
+	&-right-s { margin-right: .25em; }
 
 	// Bottom ------------------------------------------------------------- //
 	&-bottom,
-	&-bottom-l { margin-bottom: $spacing; }
-	&-bottom-m { margin-bottom: $spacing/2; }
-	&-bottom-s { margin-bottom: $spacing/4; }
+	&-bottom-l { margin-bottom: 1em; }
+	&-bottom-m { margin-bottom: .5em }
+	&-bottom-s { margin-bottom: .25em; }
 
 	// Left --------------------------------------------------------------- //
 	&-left,
-	&-left-l { margin-left: $spacing; }
-	&-left-m { margin-left: $spacing/2; }
-	&-left-s { margin-left: $spacing/4; }
+	&-left-l { margin-left: 1em; }
+	&-left-m { margin-left: .5em }
+	&-left-s { margin-left: .25em; }
 
 }
