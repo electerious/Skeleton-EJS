@@ -1,4 +1,26 @@
-// Button Mixin ---------------------------------------------------------------- //
+// Default Style -------------------------------------------------------- //
+a.btn,
+.btn {
+
+	display: inline-block;
+	padding: .5em 1em;
+	margin-bottom: 1em;
+	line-height: 1em;
+	text-decoration: none;
+	white-space: nowrap;
+	cursor: pointer;
+	user-select: none;
+	transition: background .2s $timing;
+	border: 0;
+	border-radius: 0;
+
+	&:active {
+		transition: none;
+	}
+
+}
+
+// Mixin ---------------------------------------------------------------- //
 @mixin btn($name: '', $c: #444, $hc: null, $ac: null) {
 
 	/*
@@ -7,34 +29,23 @@
 	 * @include btn('custom', red, blue, black);
 	 */
 
-	@if $name != '' { $name: '-' + $name; }
-
 	@if $hc == null { $hc: lighten($c, 10%); }
 	@if $ac == null { $ac: darken($c, 10%); }
 
 	@if lightness($c) <= 50% { $fc: white; }
 	@if lightness($c) > 50% { $fc: black; }
 
-	a.btn#{ $name }, .btn#{ $name } {
+	a.btn--#{ $name },
+	.btn--#{ $name } {
 
-		display: inline-block;
-		padding: $spacing/2 $spacing;
-		margin-bottom: $spacing;
 		background: $c;
 		color: $fc;
-		line-height: 1em;
-		text-decoration: none;
-		white-space: nowrap;
-		cursor: pointer;
-		user-select: none;
-		transition: background .2s $timing;
-		border: 0;
-		border-radius: 0;
 
-		&:hover { background: $hc; }
+		&:hover {
+			background: $hc;
+		}
 
 		&:active {
-			transition: none;
 			background: $ac;
 		}
 
@@ -44,7 +55,7 @@
 
 }
 
-// Button Variations ----------------------------------------------------------- //
+// Variations ----------------------------------------------------------- //
 @each $colorName, $color in $colors {
 	@include btn($colorName, $color);
 }
