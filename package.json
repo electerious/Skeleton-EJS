@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "rosid-handler-ejs": "^2.0.1",
-    "rosid-handler-js": "^2.0.1",
-    "rosid-handler-scss": "^1.0.1"
+    "rosid-handler-js": "^2.1.0",
+    "rosid-handler-scss": "^1.1.0"
   }
 }
