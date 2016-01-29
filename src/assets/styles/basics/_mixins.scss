@@ -1,10 +1,10 @@
-@mixin fontFace($family, $src, $style: normal, $weight: normal) {
+@mixin fontFace($family, $src, $style: normal, $weight: 400) {
 
 	/*
 	 * Including a font with different weights:
-	 * @include fontFace('FontName', '../fonts/regular', normal, normal);
-	 * @include fontFace('FontName', '../fonts/light', normal, 'light');
-	 * @include fontFace('FontName', '../fonts/bold', normal, 'bold');
+	 * @include fontFace('FontName', '../fonts/regular', normal, 400);
+	 * @include fontFace('FontName', '../fonts/light', normal, 300);
+	 * @include fontFace('FontName', '../fonts/bold', normal, 700);
 	 */
 
 	@font-face {
