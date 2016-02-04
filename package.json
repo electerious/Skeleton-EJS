@@ -16,7 +16,7 @@
     "start": "rosid serve src/",
     "compile": "rosid compile src/ dist/"
   },
-  "devDependencies": {
+  "dependencies": {
     "rosid": "^1.2.1",
     "rosid-handler-ejs": "^2.0.1",
     "rosid-handler-js": "^2.1.0",
