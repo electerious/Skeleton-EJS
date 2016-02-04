@@ -1,17 +1,17 @@
 // Background Color -------------------------------------------------------------- //
-.c-bg {
+.bg {
 
 	@each $colorName, $color in $colors {
-		&--#{ $colorName } { background: $color; }
+		&-#{ $colorName } { background: $color; }
 	}
 
 }
 
 // Font Color -------------------------------------------------------------- //
-.c-font {
+.c {
 
 	@each $colorName, $color in $colors {
-		&--#{ $colorName } { color: $color; }
+		&-#{ $colorName } { color: $color; }
 	}
 
 }
