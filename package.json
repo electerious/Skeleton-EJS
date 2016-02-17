@@ -14,7 +14,7 @@
   "scripts": {
     "preinstall": "bower install",
     "start": "rosid serve src/",
-    "compile": "rosid compile src/ dist/"
+    "compile": "rosid compile src/ dist/ -c !**/_* -c !**/.bower.json -c !**/assets/includes"
   },
   "dependencies": {
     "rosid": "^1.4.0",
