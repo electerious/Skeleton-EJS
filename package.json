@@ -17,9 +17,9 @@
     "compile": "rosid compile src/ dist/"
   },
   "dependencies": {
-    "rosid": "^1.3.0",
+    "rosid": "^1.4.0",
     "rosid-handler-ejs": "^2.0.2",
-    "rosid-handler-js": "^2.1.1",
-    "rosid-handler-scss": "^1.1.1"
+    "rosid-handler-js": "^2.1.2",
+    "rosid-handler-scss": "^1.1.2"
   }
 }
