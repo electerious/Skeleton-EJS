@@ -3,13 +3,17 @@
 @import 'basics/vars';
 @import 'basics/mixins';
 @import 'basics/placeholders';
-@import 'basics/global';
-@import 'basics/html';
-@import 'basics/body';
-@import 'basics/typography';
-@import 'basics/image';
 
-// Grid -------------------------------------------------------- //
+// Tags -------------------------------------------------------- //
+@import 'tags/html';
+@import 'tags/body';
+@import 'tags/headlines';
+@import 'tags/text';
+@import 'tags/img';
+@import 'tags/table';
+@import 'tags/hr';
+
+// Bower ------------------------------------------------------- //
 @import '../bower/basicGrid/src/styles/main';
 
 // Blocks ------------------------------------------------------ //

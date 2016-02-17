@@ -1,0 +1,26 @@
+@include text() {
+	margin: 0;
+	margin-bottom: 1em;
+	color: color('text');
+	font-style: normal;
+}
+
+b,
+strong {
+	font-weight: 700;
+}
+
+i,
+em {
+	font-style: italic;
+}
+
+a {
+	$c: color('text');
+
+	color: $c;
+
+	&:hover { color: lighten($c, 5%); }
+
+	&:active { color: darken($c, 5%); }
+}
