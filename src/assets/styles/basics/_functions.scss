@@ -12,10 +12,9 @@
 
 @function color($key) {
 
-	// Not working in libsass <= 3.3.0
-	// @if type-of($key)=='color' {
-	// 	@error 'Never user colors like `#{ $key }` as map keys'
-	// }
+	@if type-of($key)=='color' {
+		@error 'Never user colors like `#{ $key }` as map keys'
+	}
 
 	@if map-has-key($colors, $key) {
 		@return map-get($colors, $key);
