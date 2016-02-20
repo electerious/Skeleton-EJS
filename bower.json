@@ -3,6 +3,6 @@
   "private": true,
   "dependencies": {
     "normalize-css": "normalize.css#3.0.3",
-    "basicGrid": "1.2.2"
+    "basicGrid": "1.3.0"
   }
 }
