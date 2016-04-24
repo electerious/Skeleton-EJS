@@ -20,6 +20,6 @@
     "rosid": "^1.7.4",
     "rosid-handler-ejs": "^2.2.0",
     "rosid-handler-js": "^2.3.1",
-    "rosid-handler-scss": "^1.4.0"
+    "rosid-handler-scss": "^1.5.0"
   }
 }
