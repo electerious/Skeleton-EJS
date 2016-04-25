@@ -30,8 +30,9 @@ a.btn,
 	 * @include btn('custom', red, blue, black);
 	 */
 
-	@if $hc == null { $hc: lighten($c, 10%); }
-	@if $ac == null { $ac: darken($c, 10%); }
+	$fc: null;
+	$hc: lighten($c, 10%) !default;
+	$ac: darken($c, 10%) !default;
 
 	@if lightness($c) <= 50% { $fc: white; }
 	@if lightness($c) > 50% { $fc: black; }
