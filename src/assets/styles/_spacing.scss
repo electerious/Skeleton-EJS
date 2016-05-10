@@ -1,0 +1,27 @@
+.spacing {
+
+	// Top --------------------------------------------------------------- //
+	&-top-l { margin-top: 2rem; }
+	&-top-m { margin-top: 1rem }
+	&-top-s { margin-top: .5rem; }
+	&-top-zero { margin-top: 0; }
+
+	// Right -------------------------------------------------------------- //
+	&-right-l { margin-right: 2rem; }
+	&-right-m { margin-right: 1rem }
+	&-right-s { margin-right: .5rem; }
+	&-right-zero { margin-right: 0; }
+
+	// Bottom ------------------------------------------------------------- //
+	&-bottom-l { margin-bottom: 2rem; }
+	&-bottom-m { margin-bottom: 1rem }
+	&-bottom-s { margin-bottom: .5rem; }
+	&-bottom-zero { margin-bottom: 0; }
+
+	// Left --------------------------------------------------------------- //
+	&-left-l { margin-left: 2rem; }
+	&-left-m { margin-left: 1rem }
+	&-left-s { margin-left: .5rem; }
+	&-left-zero { margin-left: 0; }
+
+}

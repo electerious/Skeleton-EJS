@@ -1,23 +1,21 @@
 // Basics ------------------------------------------------------ //
-@import 'basics/functions';
-@import 'basics/vars';
-@import 'basics/mixins';
-@import 'basics/placeholders';
-
-// Tags -------------------------------------------------------- //
-@import 'tags/html';
-@import 'tags/body';
-@import 'tags/headlines';
-@import 'tags/text';
-@import 'tags/img';
-@import 'tags/table';
-@import 'tags/hr';
+@import 'functions';
+@import 'vars';
+@import 'mixins';
+@import 'placeholders';
 
 // Bower ------------------------------------------------------- //
 @import '../bower/basicGrid/src/styles/main';
 
-// Blocks ------------------------------------------------------ //
-@import 'blocks/spacing';
-@import 'blocks/color';
-@import 'blocks/button';
-@import 'blocks/align';
+// Others ------------------------------------------------------ //
+@import 'html';
+@import 'body';
+@import 'headlines';
+@import 'text';
+@import 'img';
+@import 'table';
+@import 'hr';
+@import 'spacing';
+@import 'color';
+@import 'button';
+@import 'align';
