@@ -21,7 +21,7 @@ Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upo
 
 Skeleton dependents on …
 
-- [Node.js](https://nodejs.org/en/)
+- [Node.js](https://nodejs.org/en/) (v6.2.0 or newer)
 - [npm](https://www.npmjs.com)
 - [Bower](http://bower.io)
 
