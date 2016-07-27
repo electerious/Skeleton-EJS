@@ -58,3 +58,24 @@ Ready for prime time? Export all files, compiled and prepared for your audience.
 ```sh
 npm run compile
 ```
+
+## Docker
+
+The included Dockerfile lets you build an image which compiles your site. In this case only Docker needs to be installed on the system. No other dependencies are required.
+
+### Build
+
+Build an image from the Dockerfile. This has to be done once. The final image can be used for all Skeleton-based projects.
+
+```sh
+docker build -t electerious/skeleton .
+```
+
+### Compile
+
+Start a container from the root of your project to compile it. The container will exit automatically when all tasks have been finished.
+
+
+```sh
+docker run -it -v $(pwd):/usr/src/app --rm electerious/skeleton
+```
