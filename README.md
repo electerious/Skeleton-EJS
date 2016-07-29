@@ -65,7 +65,7 @@ The included Dockerfile lets you build an image which compiles your site. In thi
 
 ### Build
 
-Build an image from the Dockerfile. This has to be done once. The final image can be used for all Skeleton-based projects.
+Build an image from the Dockerfile. This has to be done each time you have modified the project. The new source will be copied into the image.
 
 ```sh
 docker build -t electerious/skeleton .
@@ -73,9 +73,9 @@ docker build -t electerious/skeleton .
 
 ### Compile
 
-Start a container from the root of your project to compile it. The container will exit automatically when all tasks have been finished.
+Start a container to compile your site. The container will exit automatically when all tasks have been finished. The mounted volume will contain all compiled files.
 
 
 ```sh
-docker run -it -v $(pwd):/usr/src/app --rm electerious/skeleton
+docker run --rm -t -v $(pwd)/dist:/dist electerious/skeleton
 ```

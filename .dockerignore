@@ -1,0 +1,10 @@
+# Package Managers
+npm-debug.log
+node_modules
+src/assets/bower
+
+# IDE
+.idea/
+
+# Dist folder
+dist
