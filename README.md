@@ -77,5 +77,5 @@ Start a container to compile your site. The container will exit automatically wh
 
 
 ```sh
-docker run --rm -t -v $(pwd)/dist:/dist electerious/skeleton
+docker run --rm -tv $(pwd)/dist:/dist electerious/skeleton
 ```
