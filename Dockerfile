@@ -1,25 +1,25 @@
 FROM mhart/alpine-node:6
 
-RUN mkdir -p /app
-WORKDIR /app
+RUN mkdir -p /app/
+WORKDIR /app/
 
-RUN npm install bower -g
-RUN apk add --no-cache make gcc g++ python git
+RUN npm install bower -g && \
+    apk add --no-cache make gcc g++ python git
 
 # Add package.json first so that the docker image build can use
 # the cache as long as contents of package.json hasn't changed.
 
-COPY package.json /app
+COPY package.json /app/
 RUN npm install --no-optional
 
 # Add bower.json next so that the docker image build can use
 # the cache as long as contents of bower.json hasn't changed.
 
-COPY .bowerrc /app
-COPY bower.json /app
+COPY bower.json .bowerrc /app/
 RUN bower install --allow-root
 
-COPY . /app
+COPY . /app/
+VOLUME /dist/
 
 CMD npm run compile && \
     rm -rf /dist/* && \
