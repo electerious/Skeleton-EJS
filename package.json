@@ -17,7 +17,7 @@
     "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/.bower.json' -i '**/assets/includes'"
   },
   "dependencies": {
-    "rosid": "^3.1.0",
+    "rosid": "^3.1.1",
     "rosid-handler-ejs": "^3.0.0",
     "rosid-handler-js": "^3.0.0",
     "rosid-handler-scss": "^2.0.0"
