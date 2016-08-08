@@ -18,9 +18,12 @@ RUN npm install --no-optional
 COPY bower.json .bowerrc /app/
 RUN bower install --allow-root
 
+# Copy and compile source in the last step as the source
+# might change the most.
+
 COPY . /app/
+RUN npm run compile
 VOLUME /dist/
 
-CMD npm run compile && \
-    rm -rf /dist/* && \
+CMD rm -rf /dist/* && \
     cp -R dist /
