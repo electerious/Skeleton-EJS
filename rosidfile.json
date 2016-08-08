@@ -6,7 +6,7 @@
   },
   {
     "name"    : "SCSS",
-    "path"    : "assets/styles/[^_]*.{css,scss}",
+    "path"    : "assets/styles/[^_]*.{css,scss}*",
     "handler" : "rosid-handler-scss"
   },
   {
