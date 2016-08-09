@@ -23,6 +23,7 @@ RUN bower install --allow-root
 
 COPY . /app/
 RUN npm run compile
+
 VOLUME /dist/
 
 CMD rm -rf /dist/* && \
