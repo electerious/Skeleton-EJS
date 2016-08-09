@@ -29,13 +29,7 @@ Make sure to install and update all dependencies before you fork and setup Skele
 
 ## Setup
 
-We recommend to download Skeleton from GitHub using git:
-
-```sh
-git clone https://github.com/electerious/Skeleton
-```
-
-Install all required dependencies from both [npm](https://www.npmjs.com) and [Bower](http://bower.io) before you start with the development. All steps are combined into one single command, which can be executed when both package managers are installed on your system.
+Install all required dependencies from both [npm](https://www.npmjs.com) and [Bower](http://bower.io) before you start developing. All steps are combined into one single command, which can be executed when both package managers are installed on your system.
 
 ```sh
 npm install
@@ -75,7 +69,13 @@ docker build -t electerious/skeleton .
 
 Start a container to compile your site. The container will exit automatically when all tasks have been finished. The mounted volume will contain all compiled files.
 
-
 ```sh
 docker run --rm -tv $(pwd)/dist:/dist electerious/skeleton
 ```
+
+## Troubleshooting
+
+- Install the latest version of [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com)
+- Delete `node_modules` and `src/assets/bower` and [reinstall all dependencies](#setup)
+- Check if the project depends on the newest version of [Rosid](https://github.com/electerious/Rosid)
+- Try to compile the site using the included [Dockerfile](#docker)
