@@ -11,7 +11,7 @@
   },
   {
     "name"    : "EJS",
-    "path"    : "[^_]*.{html,ejs}",
+    "path"    : "[^_]*.{html,ejs}*",
     "handler" : "rosid-handler-ejs"
   }
 ]
