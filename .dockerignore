@@ -25,4 +25,5 @@ src/assets/bower
 dist
 
 # Miscellaneous
+Dockerfile
 .git
