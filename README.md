@@ -79,3 +79,4 @@ docker run --rm -tv $(pwd)/dist:/dist electerious/skeleton
 - Delete `node_modules` and `src/assets/bower` and [reinstall all dependencies](#setup)
 - Check if the project depends on the newest version of [Rosid](https://github.com/electerious/Rosid)
 - Try to compile the site using the included [Dockerfile](#docker)
+- Fix your [npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) when receiving an EACCES error
