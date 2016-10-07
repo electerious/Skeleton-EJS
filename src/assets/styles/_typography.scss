@@ -53,11 +53,5 @@ em {
 }
 
 a {
-	$c: color('text');
-
-	color: $c;
-
-	&:hover { color: lighten($c, 5%); }
-
-	&:active { color: darken($c, 5%); }
+	color: color('text');
 }
