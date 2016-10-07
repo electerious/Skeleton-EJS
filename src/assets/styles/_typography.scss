@@ -1,6 +1,6 @@
 // Headlines -------------------------------------------------------------- //
 @include headlines() {
-	margin: 0 0 1rem;
+	margin: 0 0 $gutter/2;
 	color: color('text');
 	text-rendering: optimizeLegibility;
 }
@@ -37,7 +37,7 @@ h6,
 
 // Text -------------------------------------------------------------- //
 @include text() {
-	margin: 0 0 1rem;
+	margin: 0 0 $gutter/2;
 	color: color('text');
 	font-style: normal;
 }
