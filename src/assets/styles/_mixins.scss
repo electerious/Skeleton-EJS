@@ -17,6 +17,7 @@
 }
 
 @mixin headlines() {
+
 	h1, .h1,
 	h2, .h2,
 	h3, .h3,
@@ -25,9 +26,11 @@
 	h6, .h6 {
 		@content;
 	}
+
 }
 
 @mixin text() {
+
 	p,
 	address,
 	ol,
@@ -36,4 +39,5 @@
 	blockquote {
 		@content;
 	}
+
 }
