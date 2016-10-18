@@ -11,7 +11,7 @@ a.btn,
 	white-space: nowrap;
 	cursor: pointer;
 	user-select: none;
-	transition: background .2s $timing;
+	transition: background $duration $timing;
 	border: 0;
 	border-radius: 0;
 
