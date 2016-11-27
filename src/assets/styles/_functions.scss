@@ -1,7 +1,7 @@
 @function color($key) {
 
 	@if type-of($key)=='color' {
-		@error 'Never user colors like `#{ $key }` as map keys'
+		@error 'Never user colors like `#{ $key }` as map keys';
 	}
 
 	@if map-has-key($colors, $key) {
