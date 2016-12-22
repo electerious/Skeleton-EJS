@@ -2,7 +2,7 @@
   "name": "skeleton",
   "private": true,
   "dependencies": {
-    "basicGrid": "2.0.0",
+    "basicGrid": "2.0.1",
     "normalize-css": "5.0.0"
   }
 }
