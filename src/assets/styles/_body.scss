@@ -1,9 +1,10 @@
 body {
 
-	display: block;
+	// Set the min-height to 100% to fill the whole page with a
+	// gradient when the body has a background gradient.
 	min-height: 100%;
-	background: white;
-	font: $fontStack;
+
+	// Better font rendering for Webkit and Firefox
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 
@@ -11,10 +12,6 @@ body {
 	*::before,
 	*::after {
 		box-sizing: border-box;
-	}
-
-	@media (max-width: $bpS) {
-		font-size: 14px;
 	}
 
 }
