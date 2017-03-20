@@ -18,7 +18,7 @@
   },
   "dependencies": {
     "rosid": "^6.0.0",
-    "rosid-handler-ejs": "^6.0.0",
+    "rosid-handler-ejs": "^7.0.0",
     "rosid-handler-js": "^8.0.0",
     "rosid-handler-scss": "^4.0.0"
   }
