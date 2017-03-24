@@ -12,6 +12,9 @@
   {
     "name"    : "EJS",
     "path"    : "[^_]*.{html,ejs}*",
-    "handler" : "rosid-handler-ejs"
+    "handler" : "rosid-handler-ejs",
+    "opts": {
+      "data": "data.json"
+    }
   }
 ]
