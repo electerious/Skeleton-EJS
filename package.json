@@ -1,5 +1,5 @@
 {
-  "name": "skeleton",
+  "name": "skeleton-ejs",
   "version": "2.0.0",
   "description": "A front-end template build upon Rosid",
   "private": true,

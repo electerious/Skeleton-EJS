@@ -1,5 +1,5 @@
 {
-  "name": "skeleton",
+  "name": "skeleton-ejs",
   "private": true,
   "dependencies": {
     "basicGrid": "2.0.1",
