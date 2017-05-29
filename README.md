@@ -54,7 +54,7 @@ Ready for prime time? Export all files, compiled and prepared for your audience.
 npm run compile
 ```
 
-## Docker
+### Docker
 
 The included Dockerfile lets you build an image which compiles your site. In this case only Docker needs to be installed on the system. No other dependencies are required.
 
