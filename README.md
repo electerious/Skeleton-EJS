@@ -10,6 +10,7 @@ Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upo
 - [How to use](#how-to-use)
 	- [Develop](#develop)
 	- [Compile](#compile)
+- [Docker](#docker)
 - [Troubleshooting](#troubleshooting)
 
 ## Features
