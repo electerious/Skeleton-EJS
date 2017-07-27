@@ -1,4 +1,4 @@
-FROM mhart/alpine-node:7
+FROM mhart/alpine-node:8
 
 RUN mkdir -p /app/
 WORKDIR /app/
