@@ -1,5 +1,3 @@
-// Default Style -------------------------------------------------------- //
-a.btn,
 .btn {
 
 	display: inline-block;
@@ -19,45 +17,28 @@ a.btn,
 		transition: none;
 	}
 
-}
+	@each $colorName, $color in $colors {
 
-// Mixin ---------------------------------------------------------------- //
-@mixin btn($name: '', $c: #444, $hc: null, $ac: null) {
+		$colorFont: null;
 
-	/*
-	 * @include btn('white', white);
-	 * @include btn('black', black);
-	 * @include btn('custom', red, blue, black);
-	 */
+		@if lightness($color) <= 50% { $colorFont: white; }
+		@if lightness($color) > 50% { $colorFont: black; }
 
-	$fc: null;
-	$hc: lighten($c, 10%) !default;
-	$ac: darken($c, 10%) !default;
+		&--#{ $colorName } {
 
-	@if lightness($c) <= 50% { $fc: white; }
-	@if lightness($c) > 50% { $fc: black; }
+			background: $color;
+			color: $colorFont;
 
-	a.btn--#{ $name },
-	.btn--#{ $name } {
+			&:hover {
+				background: lighten($color, 10%);
+			}
 
-		background: $c;
-		color: $fc;
+			&:active {
+				background: darken($color, 10%);
+			}
 
-		&:hover {
-			background: $hc;
 		}
-
-		&:active {
-			background: $ac;
-		}
-
-		@content;
 
 	}
 
-}
-
-// Variations ----------------------------------------------------------- //
-@each $colorName, $color in $colors {
-	@include btn($colorName, $color);
 }

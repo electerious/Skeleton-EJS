@@ -8,7 +8,6 @@
   "opengraph": "assets/images/og.jpg",
   "favicon": "assets/images/favicon.ico",
   "styles": [
-    "assets/bower/normalize-css/normalize.css",
     "assets/styles/main.css"
   ],
   "scripts": [

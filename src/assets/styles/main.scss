@@ -3,8 +3,9 @@
 @import 'vars';
 @import 'mixins';
 
-// Bower ------------------------------------------------------- //
-@import '../bower/basicGrid/src/styles/main';
+// Modules ----------------------------------------------------- //
+@import '../../../node_modules/normalize.css/normalize';
+@import '../../../node_modules/basicgrid/src/styles/main';
 
 // Others ------------------------------------------------------ //
 @import 'html';

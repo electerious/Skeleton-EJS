@@ -19,7 +19,6 @@
 # Package Managers
 npm-debug.log
 node_modules
-src/assets/bower
 
 # Dist folder
 dist

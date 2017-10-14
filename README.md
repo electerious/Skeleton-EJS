@@ -24,17 +24,16 @@ Jump-start your front-end development. Skeleton is a HTML5 Boilerplate build upo
 Skeleton dependents on …
 
 - [Node.js](https://nodejs.org/en/) (v8.5.0 or newer)
-- [npm](https://www.npmjs.com)
-- [Bower](http://bower.io)
+- [yarn](https://yarnpkg.com/en/)
 
 Make sure to install and update all dependencies before you fork and setup Skeleton.
 
 ## Setup
 
-Install all required dependencies from both [npm](https://www.npmjs.com) and [Bower](http://bower.io) before you start developing. All steps are combined into one single command, which can be executed when both package managers are installed on your system.
+Install all required dependencies with [yarn](https://yarnpkg.com/en/) before you start developing.
 
 ```sh
-npm install
+yarn install
 ```
 
 ## How to use
@@ -44,7 +43,7 @@ npm install
 Start developing using the following command. You browser will open, wait for code-changes and live-reload instantly when you update your files. JS, SASS and EJS will be compiled on-the-fly.
 
 ```sh
-npm start
+yarn start
 ```
 
 ### Compile
@@ -52,7 +51,7 @@ npm start
 Ready for prime time? Export all files, compiled and prepared for your audience. Simple upload the final `dist/` folder to your server and relax. Take a seat and enjoy a delicious burger from your favorite restaurant.
 
 ```sh
-npm run compile
+yarn run compile
 ```
 
 ## Docker
@@ -72,13 +71,12 @@ docker build -t electerious/skeleton .
 Start a container to compile your site. The container will exit automatically when all tasks have been finished. The mounted volume will contain all compiled files.
 
 ```sh
-docker run --rm -tv $(pwd)/dist:/dist electerious/skeleton
+docker run --rm -tv "$(pwd)/dist:/dist" electerious/skeleton
 ```
 
 ## Troubleshooting
 
-- Install the latest version of [Node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com)
-- Delete `node_modules` and `src/assets/bower` and [reinstall all dependencies](#setup)
+- Install the latest version of [Node.js](https://nodejs.org/en/) and [yarn](https://yarnpkg.com/en/)
+- Delete `node_modules` and [reinstall all dependencies](#setup)
 - Check if the project depends on the newest version of [Rosid](https://github.com/electerious/Rosid)
 - Try to compile the site using the included [Dockerfile](#docker)
-- Fix your [npm permissions](https://docs.npmjs.com/getting-started/fixing-npm-permissions) when receiving an EACCES error
