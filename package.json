@@ -16,11 +16,11 @@
     "compile": "rosid compile src/ dist/ -i '**/_*' -i '**/assets/includes' -i '**/*.data.{js,json}'"
   },
   "dependencies": {
-    "basicgrid": "^3.0.0",
-    "normalize.css": "^7.0.0",
-    "rosid": "^9.0.1",
+    "basicgrid": "^3.1.0",
+    "normalize.css": "^8.0.0",
+    "rosid": "^9.0.3",
     "rosid-handler-ejs": "^8.0.3",
-    "rosid-handler-js": "^10.0.1",
-    "rosid-handler-sass": "^5.0.2"
+    "rosid-handler-js": "^10.1.0",
+    "rosid-handler-sass": "^6.0.1"
   }
 }
