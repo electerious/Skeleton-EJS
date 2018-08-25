@@ -18,9 +18,9 @@
   "dependencies": {
     "basicgrid": "^3.1.0",
     "normalize.css": "^8.0.0",
-    "rosid": "^9.0.3",
-    "rosid-handler-ejs": "^8.0.3",
-    "rosid-handler-js": "^10.1.0",
-    "rosid-handler-sass": "^6.0.1"
+    "rosid": "^10.0.0",
+    "rosid-handler-ejs": "^9.0.0",
+    "rosid-handler-js": "^11.0.0",
+    "rosid-handler-sass": "^6.0.2"
   }
 }
