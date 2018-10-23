@@ -20,7 +20,7 @@
     "normalize.css": "^8.0.0",
     "rosid": "^10.0.0",
     "rosid-handler-ejs": "^9.0.0",
-    "rosid-handler-js": "^11.0.0",
+    "rosid-handler-js": "^12.0.0",
     "rosid-handler-sass": "^6.0.2"
   }
 }
