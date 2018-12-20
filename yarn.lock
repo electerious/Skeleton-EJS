@@ -1454,6 +1454,13 @@ constants-browserify@~1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/constants-browserify/-/constants-browserify-1.0.0.tgz#c20b96d8c617748aaf1c16021760cd27fcb8cb75"
 
+continuous-stealthy-require@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/continuous-stealthy-require/-/continuous-stealthy-require-1.0.0.tgz#0f21defcf9a0f16a47a7a5bc82b51899acbd7119"
+  integrity sha512-Gw2NbcEnIYXPByrRXvF2qSCrhsxBsjwB3F92sYKY7h/JBj0BCNLLck3cUn977UY2ZEeLzU0Xv8HNVrSXS+FCOg==
+  dependencies:
+    stealthy-require "^1.1.1"
+
 convert-source-map@^1.1.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/convert-source-map/-/convert-source-map-1.6.0.tgz#51b537a8c43e0f04dec1993bffcdd504e758ac20"
@@ -3452,9 +3459,10 @@ normalize-url@^3.0.0:
   version "3.2.0"
   resolved "https://registry.yarnpkg.com/normalize-url/-/normalize-url-3.2.0.tgz#98d0948afc82829f374320f405fe9ca55a5f8567"
 
-normalize.css@^8.0.0:
-  version "8.0.0"
-  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.0.tgz#14ac5e461612538a4ce9be90a7da23f86e718493"
+normalize.css@^8.0.1:
+  version "8.0.1"
+  resolved "https://registry.yarnpkg.com/normalize.css/-/normalize.css-8.0.1.tgz#9b98a208738b9cc2634caacbc42d131c97487bf3"
+  integrity sha512-qizSNPO93t1YUuUhP22btGOo3chcvDFqFaj2TRybP0DMxkHOCTYwp3n34fel4a31ORXy4m1Xq0Gyqpb5m33qIg==
 
 "npmlog@0 || 1 || 2 || 3 || 4", npmlog@^4.0.0, npmlog@^4.0.2:
   version "4.1.2"
@@ -4358,6 +4366,11 @@ request@^2.87.0:
     tunnel-agent "^0.6.0"
     uuid "^3.3.2"
 
+require-data@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/require-data/-/require-data-1.0.0.tgz#1fb2098f49e0c23c1ecc612095bf69c4d8836aef"
+  integrity sha512-cw/0M1xEpSbbl4FLcHQph/9G0HMzT7Wnb/fzGp/P1zivO+7TNyvyvxxgx0tGzNGej0PKJgn9vdj/vFlpRPxJSg==
+
 require-directory@^2.1.1:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/require-directory/-/require-directory-2.1.1.tgz#8c64ad5fd30dab1c976e2344ffe7f792a6a6df42"
@@ -4422,13 +4435,15 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^2.0.0"
     inherits "^2.0.1"
 
-rosid-handler-ejs@^9.0.0:
-  version "9.0.0"
-  resolved "https://registry.yarnpkg.com/rosid-handler-ejs/-/rosid-handler-ejs-9.0.0.tgz#0accb8d5647082550287a70a0ee0fdf364c49997"
+rosid-handler-ejs@^9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/rosid-handler-ejs/-/rosid-handler-ejs-9.1.0.tgz#f09aa9cf939caf533f092ba9e1e1756d82fabe3f"
+  integrity sha512-SZRcZQmoyDCoxOIClXUNivbWRyQ+6QrrINA1q0/ostDuHP9MNZdHNQMTtjdar0/VqF5udRCHOEqWc/Ms51FIsQ==
   dependencies:
+    continuous-stealthy-require "^1.0.0"
     ejs "^2.5.9"
     locate-path "^3.0.0"
-    stealthy-require "^1.1.1"
+    require-data "^1.0.0"
 
 rosid-handler-js@^12.0.0:
   version "12.0.0"
